@@ -1,0 +1,328 @@
+.background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-image: url(background.avif);
+    background-size: cover;
+}
+
+.front-page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.title {
+    font-size: 50px;
+    font-family: Handlee;
+    margin-top: 5%;
+    font-weight: bold;
+    mix-blend-mode:darken;
+
+}
+.box {
+    z-index: 1;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 0 25px rgba(39, 3, 3, 0.3);
+    background-color: rgba(220, 220, 220, 0.375);
+    opacity: 0.7;
+}
+.colors {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.display {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 8%;
+}
+.rgb {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+.rgb-slider {
+    display: flex;
+    flex-direction: column;
+    margin-top:auto;
+}
+.rgb-number {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.text-input {
+    margin: 10px;
+    width: 70px;
+    padding: 5px;
+    font-size: 25px;
+    font-family: Handlee;
+}
+.sp {
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+.sp-r {margin-bottom: 0px !important;}
+.sp-g {margin-bottom: 0px !important;}
+.slider {
+    -webkit-appearance: none;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+}
+.red {background-color: rgb(255, 150, 150);}
+.green {background-color: rgb(150, 255, 150);}
+.blue {background-color: rgb(150, 150, 255);}
+.aio::-moz-range-thumb {background-color: rgb(150, 150, 150);}
+.aio::-webkit-slider-thumb {background-color: rgb(150, 150, 150);}
+.red::-moz-range-thumb {background-color: rgb(255, 100, 100);}
+.red::-webkit-slider-thumb {background-color: rgb(255, 100, 100);}
+.green::-moz-range-thumb {background-color: rgb(100, 255, 100);}
+.green::-webkit-slider-thumb {background-color: rgb(100, 255, 100);}
+.blue::-moz-range-thumb {background-color: rgb(100, 100, 255);}
+.blue::-webkit-slider-thumb {background-color: rgb(100, 100, 255);}
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.list {
+    width: 60px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 25px;
+    font-family: Handlee;
+    background-color: white;
+    border: 1px solid black;
+}
+.list-items {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    width: 150px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    transition-duration: 0.5s;
+}
+.li {
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    font-family: Handlee;
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+.li5 {border: none;}
+.list-items-opn {
+    z-index: 2;
+    opacity: 1;
+}
+.hex-display {
+    height: 30px; 
+    width: 200px; 
+    margin: 20px;
+    line-height: 30px; 
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10%;
+    font-family: Handlee;
+    background-color: white;
+    font-weight:bolder;
+}
+
+/* Responsive adjustments */
+
+@media only screen and (max-width: 1200px) {
+    .title {
+        font-size: 35px; /* Smaller font size for the title */
+        margin-top: 10%; /* Adjust margin */
+    }
+
+    .box {
+        width: 90%; /* Make the box wider on smaller screens */
+        padding: 20px; /* Add some padding */
+        backdrop-filter: blur(5px); /* Adjust blur */
+    }
+
+    .colors {
+        flex-direction: column; /* Stack the color controls vertically */
+    }
+
+    .display {
+        height: 150px;
+        width: 150px; /* Make the display smaller */
+    }
+
+    .rgb-slider, .rgb-number {
+        flex-direction: row; /* Align sliders and inputs side by side */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+        justify-content: center; /* Center the contents */
+    }
+
+    .text-input {
+        width: 60px; /* Smaller input boxes */
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .sp {
+        width: 200px; /* Make sliders narrower */
+    }
+
+    .list {
+        font-size: 20px; /* Adjust list font size */
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .title {
+        font-size: 35px; /* Smaller font size for the title */
+        margin-top: 10%; /* Adjust margin */
+    }
+
+    .box {
+        width: 90%; /* Make the box wider on smaller screens */
+        padding: 20px; /* Add some padding */
+        backdrop-filter: blur(5px); /* Adjust blur */
+    }
+
+    .colors {
+        flex-direction: column; /* Stack the color controls vertically */
+    }
+
+    .display {
+        height: 150px;
+        width: 150px; /* Make the display smaller */
+    }
+
+    .rgb-slider, .rgb-number {
+        flex-direction: row; /* Align sliders and inputs side by side */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+        justify-content: center; /* Center the contents */
+    }
+
+    .text-input {
+        width: 60px; /* Smaller input boxes */
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .sp {
+        width: 200px; /* Make sliders narrower */
+    }
+
+    .list {
+        font-size: 20px; /* Adjust list font size */
+    }
+
+    
+}
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 35px; /* Smaller font size for the title */
+        margin-top: 10%; /* Adjust margin */
+    }
+
+    .box {
+        width: 90%; /* Make the box wider on smaller screens */
+        padding: 20px; /* Add some padding */
+        backdrop-filter: blur(5px); /* Adjust blur */
+    }
+
+    .colors {
+        flex-direction: column; /* Stack the color controls vertically */
+    }
+
+    .display {
+        height: 150px;
+        width: 150px; /* Make the display smaller */
+    }
+
+    .rgb-slider, .rgb-number {
+        flex-direction: row; /* Align sliders and inputs side by side */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+        justify-content: center; /* Center the contents */
+    }
+
+    .text-input {
+        width: 60px; /* Smaller input boxes */
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .sp {
+        width: 200px; /* Make sliders narrower */
+    }
+
+    .list {
+        font-size: 20px; /* Adjust list font size */
+    }
+}
+   
+    
+    
+
+@media only screen and (max-width: 550px) {
+    /* For even smaller devices like phones in portrait mode */
+    .title {
+        font-size: 30px; /* Even smaller title font */
+        margin-top: 10%;
+    }
+
+    .box {
+        width: 80%; /* Use more of the screen width */
+        padding: 10px; /* Adjust padding */
+        margin-top: 30px;
+    }
+
+    .rgb-slider, .rgb-number {
+        flex-direction: column; /* Stack elements vertically on very small screens */
+    }
+
+    .sp {
+        width: 180px; /* Adjust slider width further if needed */
+    }
+
+   
+}
+
+
