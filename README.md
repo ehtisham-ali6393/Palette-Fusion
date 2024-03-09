@@ -4,7 +4,7 @@
   <a href="https://ehtisha-palettefusion.netlify.app/" target="_blank">ehtisham-ali6393</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="background.avif" />
+  <img alt="Demo" src="colorMixer-p2" />
 </div>
 
 <br/>
