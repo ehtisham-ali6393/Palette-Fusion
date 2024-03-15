@@ -35,6 +35,9 @@ Dive into the world of color mixing with Palette Fusion today. Visit [Palette Fu
 
 Happy color mixing! 🖌️
 
+<div align="center">
+  <img alt="Demo" src="palette_fusion_QR" />
+</div>
 ---
 
 ## Built With
