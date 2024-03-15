@@ -52,6 +52,9 @@ This project was built using these technologies.
 <div align="center">
   <img alt="Demo" src="palette_fusion_QR.png" />
 </div>
+<br>
+
+Thank you for visiting my personal portfolio. Let's connect and create something amazing together!
 
 
 
