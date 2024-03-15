@@ -54,7 +54,7 @@ This project was built using these technologies.
 </div>
 <br>
 
-Thank you for visiting my personal portfolio. Let's connect and create something amazing together!
+Thank you for visiting my Website. Let's connect and create something amazing together!
 
 
 
