@@ -1,7 +1,7 @@
 # Palette-Fusion
 <h2 align="center">
  Color Blender WebApp <br/>
-  <a href="https://ehtisha-palettefusion.netlify.app/" target="_blank">ehtisham-ali6393</a>
+ <!-- <a href="https://ehtisha-palettefusion.netlify.app/" target="_blank">ehtisham-ali6393</a> -->
 </h2>
 <div align="center">
   <img alt="Demo" src="colorMixer-p1.png" />
@@ -31,14 +31,9 @@ Palette Fusion is an open-source web application designed to bring the world of 
 Palette Fusion thrives on community contributions! Whether it's improving the code, designing UI enhancements, or suggesting new features, your input is valuable. 
 
 ### Get Started:
-Dive into the world of color mixing with Palette Fusion today. Visit [Palette Fusion](https://ehtisha-palettefusion.netlify.app/) to start creating, and don't forget to star me on GitHub if you find this project useful!
+Dive into the world of color mixing with Palette Fusion today. Don't forget to star me on GitHub if you find this project useful!
 
 Happy color mixing! 🖌️
-
-<div align="center">
-  <img alt="Demo" src="palette_fusion_QR" />
-</div>
----
 
 ## Built With
 This project was built using these technologies.
@@ -51,6 +46,14 @@ This project was built using these technologies.
 ### Connect with us:
 - [Twitter](https://twitter.com/Ehtisha73084186)
 - [LinkedIn](www.linkedin.com/in/ehtisham-ali-4a19831a0)
+
+- [Project Demo](https://ehtisha-palettefusion.netlify.app/)
+- Or Scan This QR to visit my website.
+<div align="center">
+  <img alt="Demo" src="palette_fusion_QR.png" />
+</div>
+
+
 
 
 
